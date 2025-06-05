@@ -1,0 +1,128 @@
+HTML CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MyResponsiveWebsite</div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <img src="c:\Users\sathi\OneDrive\certificates-sri\INTERNSHIP_2nd yr\pic1.png" alt=""> 
+  <img src="c:\Users\sathi\OneDrive\certificates-sri\INTERNSHIP_2nd yr\pic2.webp" alt="">
+
+
+</body>
+</html>
+
+
+CSS CODE:
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  background-color: #1a1a40;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: none; /* Hidden on small devices */
+  flex-direction: column;
+  background-color: #1a1a40;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-links li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: block;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Toggle menu on small screens */
+#menu-toggle:checked + .hamburger + .nav-links {
+  display: flex;
+}
+
+/* Tablet and above */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links li {
+    padding: 0 15px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+}
+img{
+   width: 50%;
+   height: 100%;
+   float: left;
+
+}
+}
