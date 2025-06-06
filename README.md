@@ -10,3 +10,6 @@ https://www.figma.com/proto/FjHLIxQpd20EaOtcrbIxoX/Untitled?node-id=6-144&p=f&t=
 
 [Click here to view the design - responsive navigation menu]
 file:///C:/Users/sathi/OneDrive/certificates-sri/INTERNSHIP_2nd%20yr/RESPONSIVE_PAGE/INDEX.HTML#
+
+[Click here to view the design - drag & drop]
+file:///C:/Users/sathi/OneDrive/certificates-sri/INTERNSHIP_2nd%20yr/RESPONSIVE_PAGE/DRAG&DRAP.html
